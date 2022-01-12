@@ -4,7 +4,13 @@
             "@babel/preset-react",
             {
                 "runtime": "automatic"}
-            ]
-
+            ],
+            // transpiles future js to previous js
+            "@babel/preset-env"
+            
+    ],
+    "plugins": [
+        // installing a specifc plugin which is the class properties one that allows us to do a specific thing we're lookinga t
+        "@babel/plugin-proposal-class-properties"
     ]
 }
